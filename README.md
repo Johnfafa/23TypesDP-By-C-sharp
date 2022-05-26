@@ -25,9 +25,13 @@
 | ---- | ---- | ----------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 |      |      | 创建型                                                      | 结构型                                                       | 行为型                                                       |
 | 范围 | 类   | Factory Method                                              | Adapter(类)                                                  | Interpreter<br />Template Method                             |
-|      | 对象 | Abstract Factory<br />Builder<br />Prototype<br />Singleton | Adapter(对象)<br />Bridge<br />Compsite<br />Decorator<br />Facade<br />Flyweight<br />Proxy | Chain of Responsibility<br />Command<br />Iterator<br />Mediator<br />Memento<br />Observer<br />State<br />Strategy<br />Visitor |
+|      | 对象 | Abstract Factory<br />Builder<br />Prototype<br />Singleton | Adapter(对象)<br />Bridge<br />Composite<br />Decorator<br />Facade<br />Flyweight<br />Proxy | Chain of Responsibility<br />Command<br />Iterator<br />Mediator<br />Memento<br />Observer<br />State<br />Strategy<br />Visitor |
 
 ​																												 图1：设计模式空间
+
+![relation](assets/设计模式之间的关系.png)
+
+​																													图2：设计模式之间的关系图
 
 #### 设计模式意图
 
@@ -41,7 +45,7 @@
 >- Command（命令）：将一个请求封装成一个对象，从而使你可用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可取消的操作。
 >- Composite（组合）：将对象组合成树形结构以表示“部分-政体”的层次结构。Composite使得客户对单个对象和复合对象的使用更具一致性。
 >- Decorator（装饰）：动态地给一个对象添加一些额外的职责。就扩展功能而言，Decorator模式比生成子类方式更为灵活。
->- Facade（外观）[fəˈsɑːd]：为子系统中的一组接口提供一个一致的界面，Fcade模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
+>- Facade（外观）[fəˈsɑːd]：为子系统中的一组接口提供一个一致的界面，Facade模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
 >- Factory Method（工厂方法）：定义一个用于创建对象的接口，让子类决定将哪一个类实例化。Factory Method使一个类的实例化延迟到了其子类。
 >- Flyweight（享元）：运用共享技术有效地支持大量细粒度的对象。
 >- Interpreter（解释器）[ɪnˈtɜrprətər]：给定一个语言，定义它的文法的一种表示，并定义一个解析器，该解释器使用该表示来解释语言中的句子。
